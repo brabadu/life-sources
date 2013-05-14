@@ -5,9 +5,9 @@ auto: true
 rdiscount:
   extensions: [smart]
 
-name: Zach Holman
-url: http://zachholman.com
-description: A fantastic blog that is fantastic.
-twitter: holman
-github: holman
-gravatar_url: http://gravatar.com/avatar/6f63cde8b16b035280ca615f621a6c8c
+name: Борислав Ларін
+url: http://brabadu.com
+description: Про життя
+twitter: brabadu
+github: brabadu
+gravatar_url: http://gravatar.com/avatar/f97f29382b72cc9fefc973750fde6125
