@@ -43,18 +43,20 @@ layout: layout
             if (resp.items) {
                 images = $('<ul>', {'class': 'gallery'})
                 $.each(resp.items, function(index, value){
+                  var image_height, image;
                   if (content_height * 1.3 >= gallery_height){
-                    var image = $('<li>', {
+                    image_height = GALLERY_WIDTH * value.image.height / value.image.width;
+
+                    image = $('<li>', {
                         'class': 'gallery__item'
                     }).append($('<img>', {
                         src: value.link,
                         title: value.title,
                         width: GALLERY_WIDTH + 'px',
-                    })).appendTo(images);
+                        height: image_height + 'px'
+                    })).appendTo(images),
 
-                    gallery_height += GALLERY_WIDTH * value.image.height / value.image.width;
-                    console.log(content_height, gallery_height);
-                    console.log(GALLERY_WIDTH * value.image.height / value.image.width);
+                    gallery_height += image_height;
                   }
                 });
                 images.appendTo('body');
