@@ -18,6 +18,28 @@ layout: layout
       <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="{{ site.twitter }}">Твітніть</a>
       <a href="http://twitter.com/{{ site.twitter }}" class="twitter-follow-button" data-show-count="false">Фоловте @{{ site.twitter }}</a>
       <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+
+      <!-- START: Livefyre Embed -->
+      <div id="livefyre-comments"></div>
+      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+      <script type="text/javascript">
+      (function () {
+          var articleId = fyre.conv.load.makeArticleId(null);
+          fyre.conv.load({}, [{
+              el: 'livefyre-comments',
+              network: "livefyre.com",
+              siteId: "333700",
+              articleId: articleId,
+              signed: false,
+              collectionMeta: {
+                  articleId: articleId,
+                  url: fyre.conv.load.makeCollectionUrl(),
+              }
+          }], function() {});
+      }());
+      </script>
+      <!-- END: Livefyre Embed -->
+
   </section>
 </section>
 
