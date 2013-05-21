@@ -220,6 +220,11 @@ a {
   top: 0px;
   right: 220px;
   margin: 0;
+  opacity: 0.4;
+}
+
+.gallery:hover {
+  opacity: 1;
 }
 
 .gallery__item {
