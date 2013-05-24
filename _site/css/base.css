@@ -216,11 +216,10 @@ a {
   }
 
 .gallery {
-  position: absolute;
-  top: 0px;
-  right: 220px;
-  margin: 0;
   opacity: 0.4;
+  height: 100px;
+  overflow: hidden;
+  padding: 0;
 }
 
 .gallery:hover {
@@ -229,8 +228,16 @@ a {
 
 .gallery__item {
   list-style: none;
+  float: left;
+}
+
+.gallery__item:last-child {
+  clear: both;
 }
 
 .gallery img {
   display: block;
+  padding: 0;
+  border: 0;
+  height: 100px;
 }

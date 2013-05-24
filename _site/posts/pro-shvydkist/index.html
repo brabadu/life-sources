@@ -53,6 +53,8 @@
   </section>
 
   <section class="content">
+  <ul class="gallery"></ul>
+
   <h1>
     <a href="/posts/pro-shvydkist">Про швидкість</a>
   </h1>
@@ -100,8 +102,7 @@
 <script type="text/javascript">
 
     $(function(){
-        var GALLERY_WIDTH = 200
-        , opts = {
+        var opts = {
             q: "hollywood classic movies",
             cx: '015379858983269969169:subkun_nnri',
             key: 'AIzaSyD7viD2gwUUn18g7edGP56AdSxVqosnnmU',
@@ -111,30 +112,20 @@
         }
         , url = 'https://www.googleapis.com/customsearch/v1'
         , cb = function(resp){
-            var images
-            , content_height = $('.content').height()
-            , gallery_height = 0;
+            var images;
 
             if (resp.items) {
-                images = $('<ul>', {'class': 'gallery'})
+                images = $('.gallery');
                 $.each(resp.items, function(index, value){
                   var image_height, image;
-                  if (content_height * 1.3 >= gallery_height){
-                    image_height = GALLERY_WIDTH * value.image.height / value.image.width;
 
                     image = $('<li>', {
                         'class': 'gallery__item'
                     }).append($('<img>', {
-                        src: value.link,
-                        title: value.title,
-                        width: GALLERY_WIDTH + 'px',
-                        height: image_height + 'px'
-                    })).appendTo(images),
-
-                    gallery_height += image_height;
-                  }
+                        src: value.image.thumbnailLink,
+                        title: value.title
+                    })).appendTo(images);
                 });
-                images.appendTo('body');
             }
             else {
                 console.log('not ok', resp);
@@ -144,22 +135,21 @@
         $.get(url, opts, cb);
     });
 </script>
-  
-  
+
   <!-- Google Analytics -->
   <script type="text/javascript">
-  
+
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-2122286-4']);
     _gaq.push(['_setDomainName', 'brabadu.com']);
     _gaq.push(['_trackPageview']);
-  
+
     (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-  
+
   </script>
 </body>
 
