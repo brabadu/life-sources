@@ -38,6 +38,12 @@ a {
       letter-spacing: 1px;
       color: black; }
   .sidebar .meta a {
+    display: inline-block;
+    height: 19px;
+    width: 19px;
+    font-size: 19px;
+    margin-left: 7px;
+
     margin-left: 0px;
     color: black; }
     .sidebar .meta a:hover {
