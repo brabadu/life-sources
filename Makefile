@@ -8,6 +8,7 @@ build: check-commitmessage
 	cd _site; git commit -m "$(m)"
 	cd _site; git push origin
 	git add _site
+	git add _posts
 	git ci -m "$(m)"
 	git push origin
 
