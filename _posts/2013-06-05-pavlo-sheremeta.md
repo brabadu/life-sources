@@ -4,7 +4,7 @@ title: Про користь від YouTube
 images_theme: youtube
 ---
 
-Знаєте, на YouTube є не тільки [котики](https://www.youtube.com/results?search_query=cats&oq=cats&gs_l=youtube.3..35i39j0l9.5956.6339.0.6591.4.4.0.0.0.0.169.591.0j4.4.0...0.0...1ac.1.11.youtube.xpAgWak_CqM), [компіляції фейлів](https://www.youtube.com/results?search_query=fail+compilation+&oq=fail+compa&gs_l=youtube.3.1.0i10l4j0j0i10j0l4.53476.54588.0.55613.10.6.0.3.3.0.192.895.0j6.6.0...0.0...1ac.1.11.youtube.8Xj6sDquYs8) та музика. Є там і корисні відео.
+Виявляється, на YouTube є не тільки [котики](https://www.youtube.com/results?search_query=cats&oq=cats&gs_l=youtube.3..35i39j0l9.5956.6339.0.6591.4.4.0.0.0.0.169.591.0j4.4.0...0.0...1ac.1.11.youtube.xpAgWak_CqM), [компіляції фейлів](https://www.youtube.com/results?search_query=fail+compilation+&oq=fail+compa&gs_l=youtube.3.1.0i10l4j0j0i10j0l4.53476.54588.0.55613.10.6.0.3.3.0.192.895.0j6.6.0...0.0...1ac.1.11.youtube.8Xj6sDquYs8) та музика. Є там і корисні відео.
 
 Я от через YouTube нещодавно відкрив для себе [Павла Шеремета](http://uk.wikipedia.org/wiki/%D0%A8%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%82%D0%B0_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87). Він найбільше відомий як Президент [Київської Школи Економіки](http://kse.org.ua/uk/), а ще ерудований та розумний спікер. Доступно пояснити він вміє. Спочатку подивився його відео з [київського TedX](http://platfor.ma/blogs/tedexkyiv/33967/), а потім виступ перед київськими пластунами.
 
