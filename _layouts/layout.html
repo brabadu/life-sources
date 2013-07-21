@@ -9,12 +9,14 @@
     {{ site.name }}
   </title>
 
-  {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
+  {% if page.type == "nonpost" %}
+    <meta property="og:title" content="{{ site.name }}" />
+    <meta property="og:description" content="Життя та неймовірні пригоди" />
+    <meta name="description" content="Життя та неймовірні пригоди">
+  {% else %}
+    <meta property="og:title" content="{{ page.title | text}}" />
     <meta property="og:description" content="{{ page.excerpt }}" />
     <meta name="description" content="{{ page.excerpt }}">
-  {% else %}
-    <meta property="og:title" content="{{ site.name }}" />
   {% endif %}
   <meta property="og:type" content="article" />
 
