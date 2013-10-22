@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://life.brabadu.com/sitemap.xml

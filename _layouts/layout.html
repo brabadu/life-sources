@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk" lang="uk">
 <head>
   <meta charset="utf-8">
   <title>
@@ -11,14 +11,15 @@
 
   {% if page.type == "nonpost" %}
     <meta property="og:title" content="{{ site.name }}" />
-    <meta property="og:description" content="Життя та неймовірні пригоди" />
-    <meta name="description" content="Життя та неймовірні пригоди">
+    <meta property="og:description" content="Життя та інші неймовірні пригоди. Мій блог про свята, будні, думки, переживання та враження." />
+    <meta name="description" content="Життя та інші неймовірні пригоди. Мій блог про свята, будні, думки, переживання та враження.">
   {% else %}
     <meta property="og:title" content="{{ page.title | text}}" />
     <meta property="og:description" content="{{ page.excerpt }}" />
     <meta name="description" content="{{ page.excerpt }}">
   {% endif %}
   <meta property="og:type" content="article" />
+  <meta name="keywords" content="борислав, ларін, українське, життя, книжки, кіно, блог, враження, програми, огляд, думки, подорожі">
 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
 
@@ -37,7 +38,7 @@
 <body>
   <section class="sidebar">
     <a href="/">
-      <img src="{{ site.gravatar_url }}?s=200" height="135" width="135" class="avatar" />
+      <img src="{{ site.gravatar_url }}?s=200" height="135" width="135" class="avatar" alt="Це я"/>
     </a>
 
     <section class="name">
@@ -106,7 +107,7 @@
       } else { f(); }
   })(document, window, "yandex_metrika_callbacks");
   </script>
-  <noscript><div><img src="//mc.yandex.ru/watch/22085671" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <noscript><div><img src="//mc.yandex.ru/watch/22085671" class="outofsight" alt="stats" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
 </body>
 

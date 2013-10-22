@@ -182,7 +182,7 @@ a {
       margin: 0;
       color: #777777;
       border-bottom: 1px solid #eee; }
-    .content .listing li span {
+    .content .listing li .post-date {
       float: right; }
     .content .listing a {
       text-decoration: none; }
@@ -248,4 +248,15 @@ a {
   padding: 0;
   border: 0;
   height: 100px;
+}
+
+.outofsight {
+  position: absolute;
+  left:-9999px;
+}
+
+.skarha-button {
+  width: 500px;
+  height: 50px;
+  font-size: 25px;
 }
