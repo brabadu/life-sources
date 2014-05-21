@@ -4,7 +4,7 @@
 
 
 body {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: "Roboto", serif;
   margin: 0;
   -webkit-font-smoothing: antialiased; }
 
@@ -155,7 +155,7 @@ a {
   max-width: 660px;
   margin-left: 170px;
   margin-right: 20px;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
   border-left: solid 1px #DEDEDE;
   padding-left: 15px;
   overflow: hidden; }
@@ -199,7 +199,7 @@ a {
     padding-bottom: 5px;
     margin-bottom: 10px; }
   .content p {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 0;
     margin-bottom: 1.2em;
     line-height: 1.7em; }
