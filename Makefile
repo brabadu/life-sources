@@ -1,11 +1,11 @@
 .PHONY: build
 
 build: check-commitmessage
-	jekyll build
-	touch _site/.nojekyll
 	cd _site; git checkout gh-pages
 	cd _site; git pull
-	cd _site; git add .
+	jekyll build
+	touch _site/.nojekyll
+	cd _site; git add --all .
 	cd _site; git commit -m "$(m)"
 	cd _site; git push origin
 	git add _site
