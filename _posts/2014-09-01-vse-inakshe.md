@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Щоб все було інакше
+
+overlay: true
+feature_image: /images/covers/plast.jpg
+
+excerpt: Одного разу задумався, а як би так зробити, щоби все пішло інакше. Без крові, сліз та жертв.
 ---
 
 

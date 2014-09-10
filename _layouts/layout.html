@@ -33,36 +33,45 @@
     {% include application.js %}
   </script>
   <meta property="twitter:account_id" content="1494952689" />
+
+  <style type="text/css">
+
+  </style>
+
+
 </head>
 
 <body>
-  <section class="sidebar">
-    <a href="/">
-      <img src="{{ site.gravatar_url }}?s=200" height="135" width="135" class="avatar" alt="Це я"/>
-    </a>
 
-    <section class="name">
-      <a href="/">
-        <span id="fname">{{ site.name|split:' '|first }}</span>
-        <span id="lname">{{ site.name|split:' '|last }}</span>
-      </a>
-    </section>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="#nav" class="menu"><span class="icons">☰</span></a>
 
-    <section class="meta">
-      <a href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-github"></i></a>
-      <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
-      <a href="https://plus.google.com/106406627565076003063?rel=author" target="_blank"><i class="fa fa-google-plus"></i></a>
-      <a href="/atom.xml"><i class="fa fa-rss"></i></a>
-    </section>
+      <nav role="navigation">
+        <ul>
+          <li><a href="/" title="Головна"><i class="fa fa-home"></i></a></li>
+          <li><a href="https://github.com/{{ site.github }}" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://twitter.com/{{ site.twitter }}" target="_blank" title="Мій Twitter"> <i class="fa fa-twitter"></i></a> </li>
+          <li><a href="/atom.xml" title="RSS"><i class="fa fa-rss"></i></a></li>
+          <li><a href="/about.html" title="Про цей блог">Про</a></li>
+        </ul>
+      </nav>
+    <div>
+  </header>
 
-    <section class="sections">
-      <ul>
-        <li><a href="/about.html">Про цей блог</a></li>
-      </ul>
-    </section>
+  <section class="article">
+    {% if page.overlay %}
+      <div style="height: 102px;" class="overlay"></div>
+    {% endif %}
+    {% if page.feature_image %}
+      <div class="featured-image" style='background-image: url("{{ page.feature_image }}"); height: 102px;'></div>
+    {% else %}
+      <div class="featured-image" style='background-image: url("{{ site.feature_image }}"); height: 102px;'></div>
+    {% endif %}
+
+    {{ content }}
   </section>
 
-  {{ content }}
 
   <!-- Google Analytics -->
   <script>
