@@ -2,6 +2,7 @@
 layout: post
 title: Павло Шеремета або про користь від YouTube
 images_theme: youtube
+excerpt: Виявляється, на YouTube є не тільки котики, компіляції фейлів та музика. Є там і корисні відео.
 ---
 
 Виявляється, на YouTube є не тільки [котики](https://www.youtube.com/results?search_query=cats&oq=cats&gs_l=youtube.3..35i39j0l9.5956.6339.0.6591.4.4.0.0.0.0.169.591.0j4.4.0...0.0...1ac.1.11.youtube.xpAgWak_CqM), [компіляції фейлів](https://www.youtube.com/results?search_query=fail+compilation+&oq=fail+compa&gs_l=youtube.3.1.0i10l4j0j0i10j0l4.53476.54588.0.55613.10.6.0.3.3.0.192.895.0j6.6.0...0.0...1ac.1.11.youtube.8Xj6sDquYs8) та музика. Є там і корисні відео.
