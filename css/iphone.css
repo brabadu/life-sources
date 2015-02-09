@@ -31,19 +31,22 @@
 
 .content h1 {
   margin: 0 0 5px 0;
-  font-size: 4em;
+  font-size: 2em;
   font-weight: bold;
 }
 
 .content .listing li,
 .content p {
-  font-size: 3em;
+  font-size: 1em;
 }
 
 .featured-image {
   display: none;
 }
 
+header.site-header nav ul li {
+  margin-left: 10px;
+}
 .site-header {
   position: static;
   display: block;
@@ -53,13 +56,9 @@
 }
 
 .site-header a {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 header.site-header nav{
   margin: 0 ;
-}
-
-.fa {
-  font-size: 2em;
 }
