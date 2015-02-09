@@ -28,8 +28,16 @@
   width: inherit;
   max-width: none;
 }
-  .content h1 {
-    margin: 0 0 5px 0; }
+
+.content h1 {
+  margin: 0 0 5px 0;
+  font-size: initial;
+  font-weight: bold;
+}
+
+.content .listing li {
+  font-size: initial;
+}
 
 .featured-image {
   display: none;
@@ -41,6 +49,10 @@
   padding: 1px;
   margin: 0;
   background-color: black;
+}
+
+.site-header a {
+  font-size: 3em;
 }
 
 header.site-header nav{
