@@ -31,12 +31,13 @@
 
 .content h1 {
   margin: 0 0 5px 0;
-  font-size: initial;
+  font-size: 4em;
   font-weight: bold;
 }
 
-.content .listing li {
-  font-size: initial;
+.content .listing li,
+.content p {
+  font-size: 3em;
 }
 
 .featured-image {
