@@ -53,6 +53,7 @@ header.site-header nav ul li {
   padding: 1px;
   margin: 0;
   background-color: black;
+  width: auto;
 }
 
 .site-header a {
