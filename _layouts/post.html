@@ -2,15 +2,26 @@
 layout: layout
 ---
 
-<section class="content">
+<section itemscope itemtype="http://schema.org/Article" class="content">
   <h1>
-    <a href="{{ page.url }}">{{ page.title }}</a>
+    <a itemprop="name" href="{{ page.url }}">{{ page.title }}</a>
   </h1>
 
-  {{ content }}
+  {% if page.feature_image %}
+    <img itemprop="image" class="hidden" src="{{ page.feature_image }}"/>
+  {% else %}
+    <img itemprop="image" class="hidden" src="{{ site.feature_image }}"/>
+  {% endif %}
+
+  <article itemprop="articleBody">
+    {{ content }}
+  </article>
 
   <section class="byline">
-    {{ page.date | date: "%d/%m/%Y" }}
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">{{ site.name }}</span>,
+    </span>
+    <span itemprop="datePublished" content="{{ page.date | date: "%d/%m/%Y" }}" >{{ page.date | date: "%d/%m/%Y" }}</span>
   </section>
   <!-- TODO: bio here -->
   <section class="meta">
@@ -21,30 +32,24 @@ layout: layout
 
   </section>
 
-      <!-- START: Livefyre Embed -->
-      <div id="livefyre-comments"></div>
-      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-      <script type="text/javascript">
-      (function () {
-          var articleId = fyre.conv.load.makeArticleId(null);
-          fyre.conv.load({}, [{
-              el: 'livefyre-comments',
-              network: "livefyre.com",
-              siteId: "333700",
+  <!-- START: Livefyre Embed -->
+  <div id="livefyre-comments"></div>
+  <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+  <script type="text/javascript">
+  (function () {
+      var articleId = fyre.conv.load.makeArticleId(null);
+      fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "333700",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
               articleId: articleId,
-              signed: false,
-              collectionMeta: {
-                  articleId: articleId,
-                  url: fyre.conv.load.makeCollectionUrl(),
-              }
-          }], function() {});
-      }());
-      </script>
-      <!-- END: Livefyre Embed -->
-
+              url: fyre.conv.load.makeCollectionUrl(),
+          }
+      }], function() {});
+  }());
+  </script>
+  <!-- END: Livefyre Embed -->
 </section>
-
-
-<script type="text/javascript">
-  load_gallery("{{ page.images_theme }}");
-</script>
