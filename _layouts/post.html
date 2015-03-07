@@ -2,17 +2,10 @@
 layout: layout
 ---
 
-<section itemscope itemtype="http://schema.org/Article" class="content">
+<section class="content">
   <h1>
-    <a itemprop="name" href="{{ page.url }}">{{ page.title }}</a>
+    <a href="{{ page.url }}">{{ page.title }}</a>
   </h1>
-
-  {% if page.feature_image %}
-    <img itemprop="image" class="hidden" src="{{ page.feature_image }}"/>
-  {% else %}
-    <img itemprop="image" class="hidden" src="{{ site.feature_image }}"/>
-  {% endif %}
-
   <article itemprop="articleBody">
     {{ content }}
   </article>

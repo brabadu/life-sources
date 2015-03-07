@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk" lang="uk">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk" lang="uk" itemscope itemtype="http://schema.org/Article">
 <head>
   <meta charset="utf-8">
   <title>
@@ -14,9 +14,14 @@
     <meta property="og:description" content="Життя та інші неймовірні пригоди. Мій блог про свята, будні, думки, переживання та враження." />
     <meta name="description" content="Життя та інші неймовірні пригоди. Мій блог про свята, будні, думки, переживання та враження.">
   {% else %}
-    <meta property="og:title" content="{{ page.title | text}}" />
-    <meta property="og:description" content="{{ page.excerpt }}" />
-    <meta name="description" content="{{ page.excerpt }}">
+    <meta property="og:title" itemprop="name" content="{{ page.title | text}}" />
+    <meta itemprop="url" content="{{ site.url }}{{ page.url }}"/>
+    <meta property="og:description"  name="description" itermprop="description" content="{{ page.excerpt }}">
+    {% if page.feature_image %}
+      <meta itemprop="image" content="{{ site.url }}{{ page.feature_image }}"/>
+    {% else %}
+      <meta itemprop="image" content="{{ site.url }}{{ site.feature_image }}"/>
+    {% endif %}
   {% endif %}
   <meta property="og:type" content="article" />
   <meta name="keywords" content="борислав, ларін, українське, життя, книжки, кіно, блог, враження, програми, огляд, думки, подорожі">
