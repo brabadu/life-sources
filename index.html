@@ -11,7 +11,7 @@ type: nonpost
     {% for post in site.posts %}
     <li>
       <time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="post-date">{{ post.date | date: "%d/%m/%Y" }}</time>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}/">{{ post.title }}</a>
     </li>
     {% endfor %}
   </ul>
