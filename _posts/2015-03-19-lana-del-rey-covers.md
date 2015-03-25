@@ -39,3 +39,8 @@ excerpt: Я слухаю Лану Дель Рей і це моя guilty pleasure
 Закриємо добірку непоганим переспівом **Blue Jeans** від **Eugene McGuinness**. Вперше взагалі чую це ім’я. Відкрив послухати відео завдяки лейблу Domino Records, який знайомий любителям Arctic Monkeys. Дивлюся на цього Євгена і бачу відлуння Алекса Тернера. А може і самонавіювання.
 
 {% youtube hqKhDYIo4fs %}<br>
+
+P.S. Це однозначно варто додати
+
+<div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-post" data-href="https://www.facebook.com/yarema.dukh/posts/10152644183636644" data-width="550"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/yarema.dukh/posts/10152644183636644"><p>Will you still love me when I&#039;m no longer young and beautiful?Will you still love me when I got nothing but my aching...</p>Posted by <a href="https://www.facebook.com/yarema.dukh">Yarema Dukh</a> on <a href="https://www.facebook.com/yarema.dukh/posts/10152644183636644">Wednesday, March 25, 2015</a></blockquote></div></div>
+<br>
